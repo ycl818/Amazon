@@ -8,8 +8,13 @@ function CartItems({ items }) {
     <div className="CartItems">
       <h1>Shopping Cart</h1>
       <hr />
-      <div className='CartItems-items'>
-          <CartItem />
+      <div className="CartItems-items">
+        {items.map((item, index) => (
+          <CartItem 
+            item={item}
+            key={index}
+          />
+        ))}
       </div>
     </div>
   );

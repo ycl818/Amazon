@@ -22,14 +22,14 @@ const items = [
      },
      {
         title: "Oculus Quest 2 — Advanced All-In-One Virtual Reality Headset",
-        stock: "In stock on January 2, 2020",
+        stock: "In stock on January 2, 2022",
         image: "item-4.jpg",
         price: "399.00",
         quantity: 1
      },
      {
         title: "All-new Echo Dot (4th Gen) | Glacier White",
-        stock: "In stock on December 25, 2020",
+        stock: "In stock on January 25, 2022",
         image: "item-5.jpg",
         price: "39.99",
         quantity: 3

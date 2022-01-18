@@ -3,12 +3,20 @@ import './CartItems.css'
 import CartItem from './CartItem';
 
 function CartItems({ items, setCartItems }) {
-  console.log(items);
   const changeItemQuantity = (e, index) => {
     // do not update the state without setter function
     const newItems = [...items]
     newItems[index].quantity = e.target.value;
     setCartItems(newItems)
+  };
+
+  const deleteItem = (indexToDelete) => {
+    // filter out the items where the item index does not equal the select item
+    const newItems = items.filter((value, index) => {
+      return index !== indexToDelete;
+    });
+    console.log(newItems)
+    setCartItems(newItems);
   };
 
   return (
@@ -22,6 +30,7 @@ function CartItems({ items, setCartItems }) {
             item={item}
             key={index}
             changeItemQuantity={changeItemQuantity}
+            deleteItem={deleteItem}
           />
         ))}
       </div>

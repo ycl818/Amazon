@@ -22,7 +22,7 @@ const items = [
      },
      {
         title: "Oculus Quest 2 — Advanced All-In-One Virtual Reality Headset",
-        stock: "In stock on January 2, 2022",
+        stock: "In stock on January 23, 2022",
         image: "item-4.jpg",
         price: "399.00",
         quantity: 1

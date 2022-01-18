@@ -7,17 +7,17 @@ import data from './Data'
 
 function App() {
 
-  const [ cartItems, setCartItem ] = useState(data)
+  const [ cartItems, setCartItems ] = useState(data)
  
   return (
-    <div className='App'>
-     <Header title="Amazon Cart" />
-      <div className='App-main'>
-        <CartItems items={cartItems} />
-        <CartTotal  items={cartItems}/>
+    <div className="App">
+      <Header title="Amazon Cart" />
+      <div className="App-main">
+        <CartItems items={cartItems} setCartItems={setCartItems} />
+        <CartTotal items={cartItems} />
       </div>
     </div>
-  )
+  );
 }
 
 export default App;

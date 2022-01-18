@@ -2,7 +2,14 @@ import React from 'react'
 import './CartItems.css'
 import CartItem from './CartItem';
 
-function CartItems({ items }) {
+function CartItems({ items, setCartItems }) {
+  console.log(items);
+  const changeItemQuantity = (e, index) => {
+    // do not update the state without setter function
+    const newItems = [...items]
+    newItems[index].quantity = e.target.value;
+    setCartItems(newItems)
+  };
 
   return (
     <div className="CartItems">
@@ -10,9 +17,11 @@ function CartItems({ items }) {
       <hr />
       <div className="CartItems-items">
         {items.map((item, index) => (
-          <CartItem 
+          <CartItem
+            index={index}
             item={item}
             key={index}
+            changeItemQuantity={changeItemQuantity}
           />
         ))}
       </div>

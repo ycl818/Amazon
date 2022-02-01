@@ -2,8 +2,8 @@
 
 ## Demo
 link in here [https://amazon-cart-practice.netlify.app/]
+![](https://github.com/ycl818/Amazon-Cart/blob/master/public/20220201-amazon.gif)
 
-![](https://github.com/ycl818/Amazon-Cart/blob/master/public/20220124_amazon-1.PNG)
 
 ## Feature
 There is a scroll bar in each product. You can choose the quantity that you want and the total will be calculated in the right hand side.
